@@ -1,0 +1,25 @@
+[package]
+name = "github.com/release-lab/whatchanged"
+bin = "whatchanged"
+versions = ["0.5.7", "0.5.6", "0.5.5", "0.5.4", "0.5.3", "0.5.1", "0.5.0"]
+authors = ["Axetroy <axetroy.dev@gmail.com>"]
+keywords = []
+repository = "https://github.com/release-lab/whatchanged"
+description = """
+Elegant changelog generator. 优雅的变更日志生成器.
+"""
+license = "MIT"
+
+[darwin]
+x86_64 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_darwin_amd64.tar.gz" }
+aarch64 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_darwin_arm64.tar.gz" }
+
+[windows]
+x86 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_windows_386.tar.gz" }
+x86_64 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_windows_amd64.tar.gz" }
+aarch64 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_windows_arm64.tar.gz" }
+
+[linux]
+x86 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_linux_386.tar.gz" }
+x86_64 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_linux_amd64.tar.gz" }
+aarch64 = { url = "https://github.com/release-lab/whatchanged/releases/download/v{version}/whatchanged_linux_arm64.tar.gz" }
